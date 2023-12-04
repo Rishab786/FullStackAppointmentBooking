@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #addon-wrapping {
+  margin-left: 110px;
+}
+#center{
+    margin-left: 120px;
+
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="center"> Login </h1>
+    <div class="input-group flex-nowrap">
+        
+        <form action="/dashboard" method="post">
+            <span class="input-group-text" id="addon-wrapping">Email
+                <input type="text" class="form-control" placeholder="Enter Email" aria-label="Username" aria-describedby="addon-wrapping" name="emailid">
+            </span>
+            
+            <span class="input-group-text" id="addon-wrapping">Password
+                <input type="password" class="form-control" placeholder="Enter Password" aria-label="Username" aria-describedby="addon-wrapping" name="password">
+            </span>
+              
+            <button class="btn btn-sm btn-outline-secondary" id="center" type="submit">login</button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>

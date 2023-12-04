@@ -1,0 +1,28 @@
+<h1>Upcoming Appointments</h1>
+<ol>
+    <% for(var i=0; i < data.Appointments.length; i++) { %>
+       
+         <li><%= data.Appointments[i].name %> <%= data.Appointments[i].date %> <%= data.Appointments[i].time %> </li>
+       
+    <% } %>
+    </ol>
+    <br>
+    <h2>Book a New Appointment</h2>
+
+    <form action="/bookedSuccessfully" method="post">
+
+        <label >DoctorName
+            <input type="text" name="Name">
+        </label>
+        <br>
+        <label >Date
+            <input type="date" name="Date">
+        </label>
+        <br>
+        <label >Time
+            <input type="time" name="Time">
+        </label>
+        <br>
+        <input type="hidden" name="id" value=<%= data.id %> >
+        <button type="submit">Book</button>
+    </form>
